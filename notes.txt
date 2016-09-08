@@ -1,0 +1,17 @@
+---------------------------------------------------------------------------
+* console.log() is the print statement in JavaScript
+
+* Search & Replace
+
+	$(".super-header-wrapper").html("<img style='width:100%' src='http://goo.gl/WCrBmS'>");
+
+$("..."): jQuery selector used to grab an HTML element
+.html("..."): method replaces the HTML info of the grabbed HTML element
+
+* Search & Add
+
+	$("#main").append("Isaac Yi");	
+
+$("..."): jQuery selector used to grab an HTML element
+.append("..."): method that adds HTML info of the grabbed HTML element
+
