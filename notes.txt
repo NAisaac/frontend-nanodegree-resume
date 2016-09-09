@@ -1,17 +1,56 @@
 ---------------------------------------------------------------------------
-* console.log() is the print statement in JavaScript
-
+* console.log() is the print statement in JavaScript console
+---------------------------------------------------------------------------
 * Search & Replace
 
 	$(".super-header-wrapper").html("<img style='width:100%' src='http://goo.gl/WCrBmS'>");
-
+---------------------------------------------------------------------------
 $("..."): jQuery selector used to grab an HTML element
 .html("..."): method replaces the HTML info of the grabbed HTML element
-
+---------------------------------------------------------------------------
 * Search & Add
 
 	$("#main").append("Isaac Yi");	
 
 $("..."): jQuery selector used to grab an HTML element
 .append("..."): method that adds HTML info of the grabbed HTML element
+---------------------------------------------------------------------------
+* Replace and then Append using format variables in helper.js 
+	var name = "Isaac Yi";
+	var role = "Web Ninja";
+	var formattedName = HTMLheaderName.replace("%data%", name);
+	var formattedRole = HTMLheaderRole.replace("%data%", role);
+	$("#header").append(formattedName);
+	$("#header").append(formattedRole);
+---------------------------------------------------------------------------
+False in JavaScript
+- false
+- 0 (zero)
+- "" (empty string)
+- null
+- undefined
+- NaN
+---------------------------------------------------------------------------
+JavaScript has NO classes; however, you can still make objects that are function
+and data capsules
 
+function Foo(){
+	/*
+	do this 
+	do that
+	do this that
+	*/
+};
+
+var bar = new Foo();
+
+var myInfo = {
+	"name" : "Isaac",
+	"age" : "27",
+	"height" : "6"
+};
+
+var myName = myInfo.name;
+var myAge = myInfo.age;
+var myHeight = myInfo.height;
+---------------------------------------------------------------------------
