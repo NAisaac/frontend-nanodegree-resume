@@ -1,11 +1,7 @@
 /*
 This file contains all of the code running in the background that makes resumeBuilder.js possible. 
 We call these helper functions because they support your code in this course.
-
-Don't worry, you'll learn what's going on in this file throughout the course. You won't need to make 
-any changes to it until you start experimenting with inserting a Google Map in Problem Set 3.
 */
-
 
 /*
 These are HTML strings. As part of the course, you'll be using JavaScript functions
@@ -86,6 +82,9 @@ function logClicks(x,y) {
 
 $(document).click(function(loc) {
   // your code goes here!
+  var x = loc.pageX;
+  var y = loc.pageY;
+  logClicks(x,y);
 });
 
 
@@ -238,7 +237,7 @@ Uncomment the code below when you're ready to implement a Google Map!
 */
 
 // Calls the initializeMap() function when the page loads
-//window.addEventListener('load', initializeMap);
+window.addEventListener('load', initializeMap);
 
 // Vanilla JS way to listen for resizing of the window
 // and adjust map bounds
